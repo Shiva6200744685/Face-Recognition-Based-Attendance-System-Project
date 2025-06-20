@@ -25,7 +25,7 @@ class Attendence:
         self.var_atten_attendence = StringVar()
 
         # first image
-        img=Image.open(r"C:\Users\happy\Desktop\modify\Face recognition system\college_images\smart-attendance.jpg") #choose the path of image from folder and write it into r""
+        img=Image.open(r"E:\project\Face recognition system\Face-Recognition-Based-Attendance-System\college_images\smart-attendance.jpg") #choose the path of image from folder and write it into r""
         img=img.resize((800,200),Image.BILINEAR)
         self.photoimg=ImageTk.PhotoImage(img)
 
@@ -33,7 +33,7 @@ class Attendence:
         f_lbl.place(x=0,y=0,width=800,height=200)
 
         # second image
-        img1=Image.open(r"C:\Users\happy\Desktop\modify\Face recognition system\college_images\smart-attendance.jpg") #choose the path of image from folder and write it into r""
+        img1=Image.open(r"E:\project\Face recognition system\Face-Recognition-Based-Attendance-System\college_images\smart-attendance.jpg") #choose the path of image from folder and write it into r""
         img1=img1.resize((800,200),Image.BILINEAR)
         self.photoimg1=ImageTk.PhotoImage(img1)
 
@@ -41,7 +41,7 @@ class Attendence:
         f_lbl.place(x=800,y=0,width=800,height=200)
 
         #background image
-        img3=Image.open(r"C:\Users\happy\Desktop\modify\Face recognition system\college_images\bg.jpg") # add the bckground image path according to your choice
+        img3=Image.open(r"E:\project\Face recognition system\Face-Recognition-Based-Attendance-System\college_images\bg.jpg") # add the bckground image path according to your choice
         img3=img3.resize((1530,710),Image.BILINEAR)
         self.photoimg3=ImageTk.PhotoImage(img3)
 
@@ -58,7 +58,7 @@ class Attendence:
         Left_frame=LabelFrame(main_frame,bd=2,relief=RIDGE,text="Student Attendence Details",font=("times new roman",35,"bold"),bg="white")
         Left_frame.place(x=10,y=10,width=730,height=500)
 
-        img_left=Image.open(r"C:\Users\happy\Desktop\Face recognition system\college_images\iStock-182059956_18390_t12.jpg") # paste the path of image with format
+        img_left=Image.open(r"E:\project\Face recognition system\Face-Recognition-Based-Attendance-System\college_images\iStock-182059956_18390_t12.jpg") # paste the path of image with format
         img_left=img_left.resize((720,130),Image.BILINEAR)
         self.photoimg_left=ImageTk.PhotoImage(img_left)
 
@@ -127,7 +127,7 @@ class Attendence:
         save_btn=Button(btn_frame,text="import csv",command=self.importCsv,width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
         save_btn.grid(row=0,column=0)
 
-        update_btn=Button(btn_frame,text="Export csv",command=self.exportCsv,width=17,font=("times new roman",13,"bold"),fg="white")
+        update_btn=Button(btn_frame,text="Export csv",command=self.exportCsv,width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
         update_btn.grid(row=0,column=1)
 
         delete_btn=Button(btn_frame,text="update",width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
@@ -179,7 +179,7 @@ class Attendence:
 
     #=================fetch data=================
 
-    def fetchData(selfself,rows):
+    def fetchData(self,rows):
         self.AttendenceReportTable.delete(*self.AttendenceReportTable.get_children())
         for i in rows:
             self.AttendenceReportTable.insert("",END,values=i)
