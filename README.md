@@ -2,7 +2,7 @@
 
 This project is a Python-based desktop application that automates attendance tracking using facial recognition. Designed with a user-friendly GUI, it captures student details, trains a facial recognition model, and accurately marks attendance in real-time.
 
-![Main GUI](./Screenshot%202025-06-20%20075639.png)
+![Main GUI](./task_rem.png)
 
 ---
 
@@ -33,7 +33,7 @@ This project is a Python-based desktop application that automates attendance tra
 ## 🖼️ More Screenshots
 
 ### Student Management Panel
-![Student Management Panel](./task_rem.png)
+![Student Management Panel](./Screenshot%202025-06-20%20075639.png)
 
 ---
 
