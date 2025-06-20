@@ -1,27 +1,5 @@
-# Core GUI Framework
-tkinter
-
-# Image Processing
 Pillow==10.0.1
-
-# Computer Vision and Face Recognition
 opencv-python==4.8.1.78
 opencv-contrib-python==4.8.1.78
-
-# Database Connectivity
 mysql-connector-python==8.1.0
-
-# Numerical Computing
 numpy==1.24.3
-
-# Date and Time Handling
-datetime
-
-# File System Operations
-os
-csv
-
-# Additional GUI Components
-tkinter.ttk
-tkinter.filedialog
-tkinter.messagebox
